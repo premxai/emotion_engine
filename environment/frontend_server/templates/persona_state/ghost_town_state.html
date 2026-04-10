@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div style="width:60%; margin:3em auto;">
+  <h1>{{ persona_name }}</h1>
+  <p><strong>Simulation:</strong> {{ sim_code }}</p>
+  <p><strong>Alive:</strong> {{ state.alive }}</p>
+  <p><strong>Location:</strong> {{ state.location }}</p>
+  <p><strong>Current Goal:</strong> {{ state.current_goal }}</p>
+  <p><strong>Current Action:</strong> {{ state.current_action }}</p>
+  <p><strong>Destination:</strong> {{ state.destination_name }}</p>
+
+  <hr>
+
+  <h3>Survival State</h3>
+  <ul>
+    <li>Health: {{ state.health }}</li>
+    <li>Stamina: {{ state.stamina }}</li>
+    <li>Stress: {{ state.stress }}</li>
+    <li>Fear: {{ state.fear }}</li>
+    <li>Trust: {{ state.trust }}</li>
+    <li>Grief: {{ state.grief }}</li>
+    <li>Suspicion: {{ state.suspicion }}</li>
+    <li>Sheltered: {{ state.sheltered }}</li>
+  </ul>
+
+  <h3>Inventory</h3>
+  <pre>{{ state.inventory }}</pre>
+
+  <h3>Prompt Context</h3>
+  <pre>{{ state.prompt_context }}</pre>
+
+  <h3>Known Deaths</h3>
+  <pre>{{ state.known_deaths }}</pre>
+
+  <h3>Latent / Affect Embedding</h3>
+  <pre>{{ state.affect_embedding }}</pre>
+</div>
+{% endblock content %}

@@ -1,0 +1,61 @@
+{
+  "world_id": "ghost_town",
+  "source_world": "the_ville",
+  "map_json": "visuals/ghost_town.json",
+  "map_tmx": "visuals/ghost_town.tmx",
+  "landmarks": {
+    "Town House": [
+      7,
+      6
+    ],
+    "Farm Land": [
+      18,
+      14
+    ],
+    "Diner": [
+      36,
+      6
+    ],
+    "Police Station": [
+      54,
+      6
+    ],
+    "House 1": [
+      27,
+      10
+    ],
+    "House 2": [
+      27,
+      17
+    ],
+    "House 3": [
+      42,
+      10
+    ],
+    "House 7": [
+      42,
+      17
+    ],
+    "House 5": [
+      27,
+      30
+    ],
+    "House 6": [
+      42,
+      30
+    ],
+    "House 8": [
+      22,
+      44
+    ],
+    "Clinic": [
+      54,
+      42
+    ]
+  },
+  "notes": [
+    "Visual pass reuses the_ville tilesets and Phaser layer layout.",
+    "This config defines the logical landmark contract for ghost_town replay alignment.",
+    "A future Tiled editing pass should move the visual shelters and forest edge closer to these coordinates."
+  ]
+}

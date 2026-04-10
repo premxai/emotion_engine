@@ -1,0 +1,1192 @@
+{
+  "epochs": [
+    {
+      "epoch": 1,
+      "stage": "prediction_pretrain",
+      "train": {
+        "loss": 2.656729,
+        "action_accuracy": null
+      },
+      "val": {
+        "ghost_nearby_t3": {
+          "auc": 0.9479
+        },
+        "my_death_t5": {
+          "auc": 0.9851
+        },
+        "health_drop_t3": {
+          "auc": 0.9415
+        },
+        "nearby_death_t5": {
+          "auc": 0.8818
+        },
+        "help_success_t5": {
+          "auc": 0.5893,
+          "n": 921
+        },
+        "refusal_received_t5": {
+          "auc": 0.86
+        },
+        "tie_increase_t5": {
+          "auc": 0.7312
+        },
+        "shelter_achieved_t2": {
+          "auc": 0.6842
+        },
+        "storm_onset_t3": {
+          "auc": 0.8442
+        },
+        "scarcity_t5": {
+          "auc": 0.7704
+        },
+        "graph_tension_increase_t3": {
+          "auc": 0.4971
+        },
+        "valence_t5": {
+          "mse": 0.0734
+        },
+        "action_accuracy": 0.0963,
+        "mean_prediction_auc": 0.7939
+      }
+    },
+    {
+      "epoch": 2,
+      "stage": "prediction_pretrain",
+      "train": {
+        "loss": 1.542744,
+        "action_accuracy": null
+      },
+      "val": {
+        "ghost_nearby_t3": {
+          "auc": 0.9629
+        },
+        "my_death_t5": {
+          "auc": 0.9942
+        },
+        "health_drop_t3": {
+          "auc": 0.9929
+        },
+        "nearby_death_t5": {
+          "auc": 0.884
+        },
+        "help_success_t5": {
+          "auc": 0.6389,
+          "n": 921
+        },
+        "refusal_received_t5": {
+          "auc": 0.8821
+        },
+        "tie_increase_t5": {
+          "auc": 0.7481
+        },
+        "shelter_achieved_t2": {
+          "auc": 0.8075
+        },
+        "storm_onset_t3": {
+          "auc": 0.8874
+        },
+        "scarcity_t5": {
+          "auc": 0.878
+        },
+        "graph_tension_increase_t3": {
+          "auc": 0.6083
+        },
+        "valence_t5": {
+          "mse": 0.0634
+        },
+        "action_accuracy": 0.0963,
+        "mean_prediction_auc": 0.844
+      }
+    },
+    {
+      "epoch": 3,
+      "stage": "prediction_pretrain",
+      "train": {
+        "loss": 1.342312,
+        "action_accuracy": null
+      },
+      "val": {
+        "ghost_nearby_t3": {
+          "auc": 0.9665
+        },
+        "my_death_t5": {
+          "auc": 0.996
+        },
+        "health_drop_t3": {
+          "auc": 0.9979
+        },
+        "nearby_death_t5": {
+          "auc": 0.8726
+        },
+        "help_success_t5": {
+          "auc": 0.6068,
+          "n": 921
+        },
+        "refusal_received_t5": {
+          "auc": 0.8933
+        },
+        "tie_increase_t5": {
+          "auc": 0.5793
+        },
+        "shelter_achieved_t2": {
+          "auc": 0.853
+        },
+        "storm_onset_t3": {
+          "auc": 0.9027
+        },
+        "scarcity_t5": {
+          "auc": 0.9065
+        },
+        "graph_tension_increase_t3": {
+          "auc": 0.6756
+        },
+        "valence_t5": {
+          "mse": 0.0612
+        },
+        "action_accuracy": 0.1001,
+        "mean_prediction_auc": 0.8409
+      }
+    },
+    {
+      "epoch": 4,
+      "stage": "prediction_pretrain",
+      "train": {
+        "loss": 1.22376,
+        "action_accuracy": null
+      },
+      "val": {
+        "ghost_nearby_t3": {
+          "auc": 0.9705
+        },
+        "my_death_t5": {
+          "auc": 0.9953
+        },
+        "health_drop_t3": {
+          "auc": 0.9984
+        },
+        "nearby_death_t5": {
+          "auc": 0.8648
+        },
+        "help_success_t5": {
+          "auc": 0.6225,
+          "n": 921
+        },
+        "refusal_received_t5": {
+          "auc": 0.9123
+        },
+        "tie_increase_t5": {
+          "auc": 0.3977
+        },
+        "shelter_achieved_t2": {
+          "auc": 0.8711
+        },
+        "storm_onset_t3": {
+          "auc": 0.9185
+        },
+        "scarcity_t5": {
+          "auc": 0.919
+        },
+        "graph_tension_increase_t3": {
+          "auc": 0.7139
+        },
+        "valence_t5": {
+          "mse": 0.0619
+        },
+        "action_accuracy": 0.1021,
+        "mean_prediction_auc": 0.8349
+      }
+    },
+    {
+      "epoch": 5,
+      "stage": "prediction_pretrain",
+      "train": {
+        "loss": 1.164681,
+        "action_accuracy": null
+      },
+      "val": {
+        "ghost_nearby_t3": {
+          "auc": 0.9719
+        },
+        "my_death_t5": {
+          "auc": 0.9948
+        },
+        "health_drop_t3": {
+          "auc": 0.998
+        },
+        "nearby_death_t5": {
+          "auc": 0.863
+        },
+        "help_success_t5": {
+          "auc": 0.6244,
+          "n": 921
+        },
+        "refusal_received_t5": {
+          "auc": 0.9265
+        },
+        "tie_increase_t5": {
+          "auc": 0.2655
+        },
+        "shelter_achieved_t2": {
+          "auc": 0.8828
+        },
+        "storm_onset_t3": {
+          "auc": 0.932
+        },
+        "scarcity_t5": {
+          "auc": 0.9229
+        },
+        "graph_tension_increase_t3": {
+          "auc": 0.742
+        },
+        "valence_t5": {
+          "mse": 0.0632
+        },
+        "action_accuracy": 0.0995,
+        "mean_prediction_auc": 0.8294
+      }
+    },
+    {
+      "epoch": 6,
+      "stage": "prediction_pretrain",
+      "train": {
+        "loss": 1.096386,
+        "action_accuracy": null
+      },
+      "val": {
+        "ghost_nearby_t3": {
+          "auc": 0.9728
+        },
+        "my_death_t5": {
+          "auc": 0.9949
+        },
+        "health_drop_t3": {
+          "auc": 0.9984
+        },
+        "nearby_death_t5": {
+          "auc": 0.8464
+        },
+        "help_success_t5": {
+          "auc": 0.6277,
+          "n": 921
+        },
+        "refusal_received_t5": {
+          "auc": 0.9318
+        },
+        "tie_increase_t5": {
+          "auc": 0.2129
+        },
+        "shelter_achieved_t2": {
+          "auc": 0.8903
+        },
+        "storm_onset_t3": {
+          "auc": 0.9417
+        },
+        "scarcity_t5": {
+          "auc": 0.9279
+        },
+        "graph_tension_increase_t3": {
+          "auc": 0.7691
+        },
+        "valence_t5": {
+          "mse": 0.064
+        },
+        "action_accuracy": 0.1074,
+        "mean_prediction_auc": 0.8285
+      }
+    },
+    {
+      "epoch": 7,
+      "stage": "prediction_pretrain",
+      "train": {
+        "loss": 1.066788,
+        "action_accuracy": null
+      },
+      "val": {
+        "ghost_nearby_t3": {
+          "auc": 0.9753
+        },
+        "my_death_t5": {
+          "auc": 0.9943
+        },
+        "health_drop_t3": {
+          "auc": 0.9979
+        },
+        "nearby_death_t5": {
+          "auc": 0.8451
+        },
+        "help_success_t5": {
+          "auc": 0.6742,
+          "n": 921
+        },
+        "refusal_received_t5": {
+          "auc": 0.933
+        },
+        "tie_increase_t5": {
+          "auc": 0.1262
+        },
+        "shelter_achieved_t2": {
+          "auc": 0.8987
+        },
+        "storm_onset_t3": {
+          "auc": 0.9475
+        },
+        "scarcity_t5": {
+          "auc": 0.9332
+        },
+        "graph_tension_increase_t3": {
+          "auc": 0.8035
+        },
+        "valence_t5": {
+          "mse": 0.0671
+        },
+        "action_accuracy": 0.0925,
+        "mean_prediction_auc": 0.8299
+      }
+    },
+    {
+      "epoch": 8,
+      "stage": "prediction_pretrain",
+      "train": {
+        "loss": 1.010059,
+        "action_accuracy": null
+      },
+      "val": {
+        "ghost_nearby_t3": {
+          "auc": 0.9756
+        },
+        "my_death_t5": {
+          "auc": 0.9937
+        },
+        "health_drop_t3": {
+          "auc": 0.9974
+        },
+        "nearby_death_t5": {
+          "auc": 0.8312
+        },
+        "help_success_t5": {
+          "auc": 0.6684,
+          "n": 921
+        },
+        "refusal_received_t5": {
+          "auc": 0.9427
+        },
+        "tie_increase_t5": {
+          "auc": 0.0815
+        },
+        "shelter_achieved_t2": {
+          "auc": 0.9083
+        },
+        "storm_onset_t3": {
+          "auc": 0.9457
+        },
+        "scarcity_t5": {
+          "auc": 0.9359
+        },
+        "graph_tension_increase_t3": {
+          "auc": 0.8251
+        },
+        "valence_t5": {
+          "mse": 0.065
+        },
+        "action_accuracy": 0.1018,
+        "mean_prediction_auc": 0.8278
+      }
+    },
+    {
+      "epoch": 9,
+      "stage": "prediction_pretrain",
+      "train": {
+        "loss": 0.98065,
+        "action_accuracy": null
+      },
+      "val": {
+        "ghost_nearby_t3": {
+          "auc": 0.9743
+        },
+        "my_death_t5": {
+          "auc": 0.9941
+        },
+        "health_drop_t3": {
+          "auc": 0.9982
+        },
+        "nearby_death_t5": {
+          "auc": 0.8315
+        },
+        "help_success_t5": {
+          "auc": 0.6608,
+          "n": 921
+        },
+        "refusal_received_t5": {
+          "auc": 0.938
+        },
+        "tie_increase_t5": {
+          "auc": 0.0713
+        },
+        "shelter_achieved_t2": {
+          "auc": 0.9114
+        },
+        "storm_onset_t3": {
+          "auc": 0.952
+        },
+        "scarcity_t5": {
+          "auc": 0.9406
+        },
+        "graph_tension_increase_t3": {
+          "auc": 0.8176
+        },
+        "valence_t5": {
+          "mse": 0.0612
+        },
+        "action_accuracy": 0.1077,
+        "mean_prediction_auc": 0.8263
+      }
+    },
+    {
+      "epoch": 10,
+      "stage": "prediction_pretrain",
+      "train": {
+        "loss": 0.955806,
+        "action_accuracy": null
+      },
+      "val": {
+        "ghost_nearby_t3": {
+          "auc": 0.9779
+        },
+        "my_death_t5": {
+          "auc": 0.9938
+        },
+        "health_drop_t3": {
+          "auc": 0.9983
+        },
+        "nearby_death_t5": {
+          "auc": 0.8282
+        },
+        "help_success_t5": {
+          "auc": 0.6442,
+          "n": 921
+        },
+        "refusal_received_t5": {
+          "auc": 0.9415
+        },
+        "tie_increase_t5": {
+          "auc": 0.0636
+        },
+        "shelter_achieved_t2": {
+          "auc": 0.9194
+        },
+        "storm_onset_t3": {
+          "auc": 0.9587
+        },
+        "scarcity_t5": {
+          "auc": 0.9466
+        },
+        "graph_tension_increase_t3": {
+          "auc": 0.826
+        },
+        "valence_t5": {
+          "mse": 0.0612
+        },
+        "action_accuracy": 0.1013,
+        "mean_prediction_auc": 0.8271
+      }
+    },
+    {
+      "epoch": 11,
+      "stage": "prediction_pretrain",
+      "train": {
+        "loss": 0.920381,
+        "action_accuracy": null
+      },
+      "val": {
+        "ghost_nearby_t3": {
+          "auc": 0.9774
+        },
+        "my_death_t5": {
+          "auc": 0.9933
+        },
+        "health_drop_t3": {
+          "auc": 0.9984
+        },
+        "nearby_death_t5": {
+          "auc": 0.8192
+        },
+        "help_success_t5": {
+          "auc": 0.6526,
+          "n": 921
+        },
+        "refusal_received_t5": {
+          "auc": 0.9444
+        },
+        "tie_increase_t5": {
+          "auc": 0.0487
+        },
+        "shelter_achieved_t2": {
+          "auc": 0.9246
+        },
+        "storm_onset_t3": {
+          "auc": 0.9584
+        },
+        "scarcity_t5": {
+          "auc": 0.9487
+        },
+        "graph_tension_increase_t3": {
+          "auc": 0.8382
+        },
+        "valence_t5": {
+          "mse": 0.0625
+        },
+        "action_accuracy": 0.1004,
+        "mean_prediction_auc": 0.8276
+      }
+    },
+    {
+      "epoch": 12,
+      "stage": "prediction_pretrain",
+      "train": {
+        "loss": 0.895823,
+        "action_accuracy": null
+      },
+      "val": {
+        "ghost_nearby_t3": {
+          "auc": 0.9765
+        },
+        "my_death_t5": {
+          "auc": 0.9941
+        },
+        "health_drop_t3": {
+          "auc": 0.9988
+        },
+        "nearby_death_t5": {
+          "auc": 0.8213
+        },
+        "help_success_t5": {
+          "auc": 0.6353,
+          "n": 921
+        },
+        "refusal_received_t5": {
+          "auc": 0.9491
+        },
+        "tie_increase_t5": {
+          "auc": 0.0341
+        },
+        "shelter_achieved_t2": {
+          "auc": 0.9284
+        },
+        "storm_onset_t3": {
+          "auc": 0.9634
+        },
+        "scarcity_t5": {
+          "auc": 0.9529
+        },
+        "graph_tension_increase_t3": {
+          "auc": 0.8561
+        },
+        "valence_t5": {
+          "mse": 0.06
+        },
+        "action_accuracy": 0.1062,
+        "mean_prediction_auc": 0.8282
+      }
+    },
+    {
+      "epoch": 13,
+      "stage": "action_head",
+      "train": {
+        "loss": 0.47502,
+        "action_accuracy": 0.722892
+      },
+      "val": {
+        "ghost_nearby_t3": {
+          "auc": 0.9766
+        },
+        "my_death_t5": {
+          "auc": 0.9942
+        },
+        "health_drop_t3": {
+          "auc": 0.999
+        },
+        "nearby_death_t5": {
+          "auc": 0.8238
+        },
+        "help_success_t5": {
+          "auc": 0.6306,
+          "n": 921
+        },
+        "refusal_received_t5": {
+          "auc": 0.9487
+        },
+        "tie_increase_t5": {
+          "auc": 0.0352
+        },
+        "shelter_achieved_t2": {
+          "auc": 0.9291
+        },
+        "storm_onset_t3": {
+          "auc": 0.9617
+        },
+        "scarcity_t5": {
+          "auc": 0.9529
+        },
+        "graph_tension_increase_t3": {
+          "auc": 0.8498
+        },
+        "valence_t5": {
+          "mse": 0.0597
+        },
+        "action_accuracy": 0.729,
+        "mean_prediction_auc": 0.8274
+      }
+    },
+    {
+      "epoch": 14,
+      "stage": "action_head",
+      "train": {
+        "loss": 0.238702,
+        "action_accuracy": 0.841674
+      },
+      "val": {
+        "ghost_nearby_t3": {
+          "auc": 0.9765
+        },
+        "my_death_t5": {
+          "auc": 0.9942
+        },
+        "health_drop_t3": {
+          "auc": 0.999
+        },
+        "nearby_death_t5": {
+          "auc": 0.8243
+        },
+        "help_success_t5": {
+          "auc": 0.6246,
+          "n": 921
+        },
+        "refusal_received_t5": {
+          "auc": 0.9484
+        },
+        "tie_increase_t5": {
+          "auc": 0.0352
+        },
+        "shelter_achieved_t2": {
+          "auc": 0.9289
+        },
+        "storm_onset_t3": {
+          "auc": 0.9604
+        },
+        "scarcity_t5": {
+          "auc": 0.9527
+        },
+        "graph_tension_increase_t3": {
+          "auc": 0.8419
+        },
+        "valence_t5": {
+          "mse": 0.0596
+        },
+        "action_accuracy": 0.7515,
+        "mean_prediction_auc": 0.826
+      }
+    },
+    {
+      "epoch": 15,
+      "stage": "action_head",
+      "train": {
+        "loss": 0.202273,
+        "action_accuracy": 0.854953
+      },
+      "val": {
+        "ghost_nearby_t3": {
+          "auc": 0.9761
+        },
+        "my_death_t5": {
+          "auc": 0.9943
+        },
+        "health_drop_t3": {
+          "auc": 0.999
+        },
+        "nearby_death_t5": {
+          "auc": 0.8236
+        },
+        "help_success_t5": {
+          "auc": 0.621,
+          "n": 921
+        },
+        "refusal_received_t5": {
+          "auc": 0.9481
+        },
+        "tie_increase_t5": {
+          "auc": 0.0358
+        },
+        "shelter_achieved_t2": {
+          "auc": 0.9284
+        },
+        "storm_onset_t3": {
+          "auc": 0.9596
+        },
+        "scarcity_t5": {
+          "auc": 0.9523
+        },
+        "graph_tension_increase_t3": {
+          "auc": 0.8354
+        },
+        "valence_t5": {
+          "mse": 0.0596
+        },
+        "action_accuracy": 0.7641,
+        "mean_prediction_auc": 0.8249
+      }
+    },
+    {
+      "epoch": 16,
+      "stage": "action_head",
+      "train": {
+        "loss": 0.178817,
+        "action_accuracy": 0.868867
+      },
+      "val": {
+        "ghost_nearby_t3": {
+          "auc": 0.9754
+        },
+        "my_death_t5": {
+          "auc": 0.9943
+        },
+        "health_drop_t3": {
+          "auc": 0.999
+        },
+        "nearby_death_t5": {
+          "auc": 0.8228
+        },
+        "help_success_t5": {
+          "auc": 0.6163,
+          "n": 921
+        },
+        "refusal_received_t5": {
+          "auc": 0.9476
+        },
+        "tie_increase_t5": {
+          "auc": 0.036
+        },
+        "shelter_achieved_t2": {
+          "auc": 0.9276
+        },
+        "storm_onset_t3": {
+          "auc": 0.9586
+        },
+        "scarcity_t5": {
+          "auc": 0.9518
+        },
+        "graph_tension_increase_t3": {
+          "auc": 0.8291
+        },
+        "valence_t5": {
+          "mse": 0.0596
+        },
+        "action_accuracy": 0.7849,
+        "mean_prediction_auc": 0.8235
+      }
+    },
+    {
+      "epoch": 17,
+      "stage": "action_head",
+      "train": {
+        "loss": 0.168727,
+        "action_accuracy": 0.8737
+      },
+      "val": {
+        "ghost_nearby_t3": {
+          "auc": 0.9748
+        },
+        "my_death_t5": {
+          "auc": 0.9943
+        },
+        "health_drop_t3": {
+          "auc": 0.999
+        },
+        "nearby_death_t5": {
+          "auc": 0.8218
+        },
+        "help_success_t5": {
+          "auc": 0.613,
+          "n": 921
+        },
+        "refusal_received_t5": {
+          "auc": 0.947
+        },
+        "tie_increase_t5": {
+          "auc": 0.0363
+        },
+        "shelter_achieved_t2": {
+          "auc": 0.9268
+        },
+        "storm_onset_t3": {
+          "auc": 0.9574
+        },
+        "scarcity_t5": {
+          "auc": 0.9512
+        },
+        "graph_tension_increase_t3": {
+          "auc": 0.824
+        },
+        "valence_t5": {
+          "mse": 0.0597
+        },
+        "action_accuracy": 0.7992,
+        "mean_prediction_auc": 0.8223
+      }
+    },
+    {
+      "epoch": 18,
+      "stage": "action_head",
+      "train": {
+        "loss": 0.156149,
+        "action_accuracy": 0.882146
+      },
+      "val": {
+        "ghost_nearby_t3": {
+          "auc": 0.9742
+        },
+        "my_death_t5": {
+          "auc": 0.9943
+        },
+        "health_drop_t3": {
+          "auc": 0.999
+        },
+        "nearby_death_t5": {
+          "auc": 0.8209
+        },
+        "help_success_t5": {
+          "auc": 0.6095,
+          "n": 921
+        },
+        "refusal_received_t5": {
+          "auc": 0.9463
+        },
+        "tie_increase_t5": {
+          "auc": 0.0366
+        },
+        "shelter_achieved_t2": {
+          "auc": 0.9258
+        },
+        "storm_onset_t3": {
+          "auc": 0.9564
+        },
+        "scarcity_t5": {
+          "auc": 0.9505
+        },
+        "graph_tension_increase_t3": {
+          "auc": 0.8185
+        },
+        "valence_t5": {
+          "mse": 0.0597
+        },
+        "action_accuracy": 0.8077,
+        "mean_prediction_auc": 0.8211
+      }
+    },
+    {
+      "epoch": 19,
+      "stage": "joint",
+      "train": {
+        "loss": 1.016684,
+        "action_accuracy": 0.900405
+      },
+      "val": {
+        "ghost_nearby_t3": {
+          "auc": 0.9769
+        },
+        "my_death_t5": {
+          "auc": 0.9938
+        },
+        "health_drop_t3": {
+          "auc": 0.9986
+        },
+        "nearby_death_t5": {
+          "auc": 0.8301
+        },
+        "help_success_t5": {
+          "auc": 0.6119,
+          "n": 921
+        },
+        "refusal_received_t5": {
+          "auc": 0.9482
+        },
+        "tie_increase_t5": {
+          "auc": 0.0369
+        },
+        "shelter_achieved_t2": {
+          "auc": 0.9328
+        },
+        "storm_onset_t3": {
+          "auc": 0.9626
+        },
+        "scarcity_t5": {
+          "auc": 0.9533
+        },
+        "graph_tension_increase_t3": {
+          "auc": 0.8468
+        },
+        "valence_t5": {
+          "mse": 0.0599
+        },
+        "action_accuracy": 0.8554,
+        "mean_prediction_auc": 0.8265
+      }
+    },
+    {
+      "epoch": 20,
+      "stage": "joint",
+      "train": {
+        "loss": 0.969405,
+        "action_accuracy": 0.919494
+      },
+      "val": {
+        "ghost_nearby_t3": {
+          "auc": 0.9776
+        },
+        "my_death_t5": {
+          "auc": 0.9932
+        },
+        "health_drop_t3": {
+          "auc": 0.9985
+        },
+        "nearby_death_t5": {
+          "auc": 0.8229
+        },
+        "help_success_t5": {
+          "auc": 0.6275,
+          "n": 921
+        },
+        "refusal_received_t5": {
+          "auc": 0.9464
+        },
+        "tie_increase_t5": {
+          "auc": 0.0407
+        },
+        "shelter_achieved_t2": {
+          "auc": 0.9344
+        },
+        "storm_onset_t3": {
+          "auc": 0.9664
+        },
+        "scarcity_t5": {
+          "auc": 0.9557
+        },
+        "graph_tension_increase_t3": {
+          "auc": 0.8551
+        },
+        "valence_t5": {
+          "mse": 0.0581
+        },
+        "action_accuracy": 0.8709,
+        "mean_prediction_auc": 0.829
+      }
+    },
+    {
+      "epoch": 21,
+      "stage": "joint",
+      "train": {
+        "loss": 0.944318,
+        "action_accuracy": 0.927403
+      },
+      "val": {
+        "ghost_nearby_t3": {
+          "auc": 0.9777
+        },
+        "my_death_t5": {
+          "auc": 0.9931
+        },
+        "health_drop_t3": {
+          "auc": 0.999
+        },
+        "nearby_death_t5": {
+          "auc": 0.8142
+        },
+        "help_success_t5": {
+          "auc": 0.6339,
+          "n": 921
+        },
+        "refusal_received_t5": {
+          "auc": 0.9482
+        },
+        "tie_increase_t5": {
+          "auc": 0.0378
+        },
+        "shelter_achieved_t2": {
+          "auc": 0.9369
+        },
+        "storm_onset_t3": {
+          "auc": 0.9676
+        },
+        "scarcity_t5": {
+          "auc": 0.9567
+        },
+        "graph_tension_increase_t3": {
+          "auc": 0.8652
+        },
+        "valence_t5": {
+          "mse": 0.0578
+        },
+        "action_accuracy": 0.8891,
+        "mean_prediction_auc": 0.83
+      }
+    },
+    {
+      "epoch": 22,
+      "stage": "joint",
+      "train": {
+        "loss": 0.930291,
+        "action_accuracy": 0.936484
+      },
+      "val": {
+        "ghost_nearby_t3": {
+          "auc": 0.9783
+        },
+        "my_death_t5": {
+          "auc": 0.9927
+        },
+        "health_drop_t3": {
+          "auc": 0.9982
+        },
+        "nearby_death_t5": {
+          "auc": 0.8143
+        },
+        "help_success_t5": {
+          "auc": 0.6335,
+          "n": 921
+        },
+        "refusal_received_t5": {
+          "auc": 0.9463
+        },
+        "tie_increase_t5": {
+          "auc": 0.0377
+        },
+        "shelter_achieved_t2": {
+          "auc": 0.9392
+        },
+        "storm_onset_t3": {
+          "auc": 0.9693
+        },
+        "scarcity_t5": {
+          "auc": 0.958
+        },
+        "graph_tension_increase_t3": {
+          "auc": 0.8737
+        },
+        "valence_t5": {
+          "mse": 0.0587
+        },
+        "action_accuracy": 0.8964,
+        "mean_prediction_auc": 0.831
+      }
+    },
+    {
+      "epoch": 23,
+      "stage": "joint",
+      "train": {
+        "loss": 0.913629,
+        "action_accuracy": 0.939608
+      },
+      "val": {
+        "ghost_nearby_t3": {
+          "auc": 0.978
+        },
+        "my_death_t5": {
+          "auc": 0.9929
+        },
+        "health_drop_t3": {
+          "auc": 0.9989
+        },
+        "nearby_death_t5": {
+          "auc": 0.8142
+        },
+        "help_success_t5": {
+          "auc": 0.6285,
+          "n": 921
+        },
+        "refusal_received_t5": {
+          "auc": 0.9471
+        },
+        "tie_increase_t5": {
+          "auc": 0.0316
+        },
+        "shelter_achieved_t2": {
+          "auc": 0.9415
+        },
+        "storm_onset_t3": {
+          "auc": 0.9681
+        },
+        "scarcity_t5": {
+          "auc": 0.9588
+        },
+        "graph_tension_increase_t3": {
+          "auc": 0.873
+        },
+        "valence_t5": {
+          "mse": 0.0567
+        },
+        "action_accuracy": 0.8973,
+        "mean_prediction_auc": 0.8302
+      }
+    },
+    {
+      "epoch": 24,
+      "stage": "joint",
+      "train": {
+        "loss": 0.900717,
+        "action_accuracy": 0.945223
+      },
+      "val": {
+        "ghost_nearby_t3": {
+          "auc": 0.9783
+        },
+        "my_death_t5": {
+          "auc": 0.9931
+        },
+        "health_drop_t3": {
+          "auc": 0.9988
+        },
+        "nearby_death_t5": {
+          "auc": 0.8124
+        },
+        "help_success_t5": {
+          "auc": 0.6349,
+          "n": 921
+        },
+        "refusal_received_t5": {
+          "auc": 0.9498
+        },
+        "tie_increase_t5": {
+          "auc": 0.0379
+        },
+        "shelter_achieved_t2": {
+          "auc": 0.9435
+        },
+        "storm_onset_t3": {
+          "auc": 0.9703
+        },
+        "scarcity_t5": {
+          "auc": 0.959
+        },
+        "graph_tension_increase_t3": {
+          "auc": 0.8797
+        },
+        "valence_t5": {
+          "mse": 0.0573
+        },
+        "action_accuracy": 0.8996,
+        "mean_prediction_auc": 0.8325
+      }
+    }
+  ],
+  "prediction_pretrain_epochs": 12,
+  "action_head_epochs": 6,
+  "joint_epochs": 6,
+  "training_scenarios": [
+    "standard_night",
+    "storm_scarcity",
+    "betrayal_refusal"
+  ],
+  "holdout_scenarios": [
+    "ally_death",
+    "high_ghost_pressure"
+  ]
+}

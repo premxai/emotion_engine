@@ -1,0 +1,58 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+dist/
+build/
+*.egg
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# PyTorch checkpoints — ignore generated ones, but keep released checkpoints
+*.pth
+*.ckpt
+outputs/**/*.pt
+outputs/**/*.pth
+
+# Allow committed checkpoints
+!checkpoints/**/*.pt
+
+# Simulation outputs (generated — not committed)
+outputs/
+
+# Django secrets and local config
+environment/frontend_server/frontend_server/settings/local.py
+environment/frontend_server/db.sqlite3
+environment/frontend_server/storage/
+environment/frontend_server/compressed_storage/
+environment/frontend_server/temp_storage/
+environment/frontend_server/*.log
+
+# Jupyter notebooks checkpoints
+.ipynb_checkpoints/
+
+# macOS / Windows
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# Test cache
+.pytest_cache/
+pytest-cache-files-*/
+htmlcov/
+.coverage
+
+# API keys (never commit)
+reverie/backend_server/utils.py

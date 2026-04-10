@@ -1,0 +1,186 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+
+{% block content %}
+<div style="max-width:960px;margin:0 auto;padding:2em;font-family:sans-serif">
+
+  <h1 style="font-size:2em;margin-bottom:0.2em">Emotion Engine</h1>
+  <p style="color:#666;font-size:1.1em;margin-top:0">
+    Emergent Emotional Behavior in Generative Agents &mdash; IDAI-780 &mdash; Prem Babu Kanaparthi
+  </p>
+
+  <hr style="margin:1.5em 0">
+
+  <!-- WHAT IS THIS -->
+  <div style="background:#f8f8f8;border-left:4px solid #2196F3;border-radius:0 8px 8px 0;padding:1em 1.4em;margin-bottom:2em;font-size:0.95em;color:#333">
+    <strong>What you're watching:</strong> 12 agents in a survival town. Every night ghosts enter and hunt them.
+    Each condition gives agents a <em>different brain</em> — the same ghosts, the same night, five completely different stories.
+    <br><br>
+    <strong>The question:</strong> Can a model trained with <em>zero emotion rules</em> independently discover that fear, grief, and suspicion are useful?
+  </div>
+
+  <!-- SIDE-BY-SIDE COMPARISON — THE MAIN EVENT -->
+  <h2 style="font-size:1.5em;margin-bottom:0.3em">Same night. Five different brains.</h2>
+  <p style="color:#555;font-size:0.92em;margin-bottom:1.2em">
+    Seed 5 &nbsp;&middot;&nbsp; 3 days &nbsp;&middot;&nbsp; 72 steps &nbsp;&middot;&nbsp; high ghost pressure &nbsp;&middot;&nbsp; identical starting positions
+  </p>
+
+  <!-- Comparison table -->
+  <div style="overflow-x:auto;margin-bottom:0.8em">
+  <table style="border-collapse:collapse;width:100%;font-size:0.9em">
+    <tr style="background:#1a1a2e;color:white">
+      <th style="padding:0.7em 1em;text-align:left">Condition</th>
+      <th style="padding:0.7em 0.6em;text-align:left">How emotions work</th>
+      <th style="padding:0.7em 0.6em;text-align:center">Survivors</th>
+      <th style="padding:0.7em 0.6em;text-align:center">Deaths</th>
+      <th style="padding:0.7em 0.6em;text-align:center">Avg Stress</th>
+      <th style="padding:0.7em 0.8em;text-align:center">Watch</th>
+    </tr>
+    <tr style="background:#f5f5f5">
+      <td style="padding:0.7em 1em;font-weight:bold;color:#9E9E9E">⬜ Baseline</td>
+      <td style="padding:0.7em 0.6em;color:#555;font-size:0.88em">No emotion at all. Pure heuristics.</td>
+      <td style="padding:0.7em 0.6em;text-align:center">9/12</td>
+      <td style="padding:0.7em 0.6em;text-align:center">3</td>
+      <td style="padding:0.7em 0.6em;text-align:center">4.0</td>
+      <td style="padding:0.7em 0.8em;text-align:center">
+        <a href="/ghost_town/demo/demo_baseline_0/0/1/" style="background:#9E9E9E;color:white;text-decoration:none;padding:0.35em 0.9em;border-radius:6px;font-size:0.88em;white-space:nowrap">&#9654; Watch</a>
+      </td>
+    </tr>
+    <tr>
+      <td style="padding:0.7em 1em;font-weight:bold;color:#2196F3">&#128309; Condition A</td>
+      <td style="padding:0.7em 0.6em;color:#555;font-size:0.88em"><strong>Hand-coded rules.</strong> If ghost visible &rarr; fear += 0.3. Programmed grief, trust, suspicion formulas.</td>
+      <td style="padding:0.7em 0.6em;text-align:center">9/12</td>
+      <td style="padding:0.7em 0.6em;text-align:center">3</td>
+      <td style="padding:0.7em 0.6em;text-align:center">47.4</td>
+      <td style="padding:0.7em 0.8em;text-align:center">
+        <a href="/ghost_town/demo/demo_condition_a/0/1/" style="background:#2196F3;color:white;text-decoration:none;padding:0.35em 0.9em;border-radius:6px;font-size:0.88em;white-space:nowrap">&#9654; Watch</a>
+      </td>
+    </tr>
+    <tr style="background:#f5f5f5">
+      <td style="padding:0.7em 1em;font-weight:bold;color:#FF9800">&#128992; Condition B</td>
+      <td style="padding:0.7em 0.6em;color:#555;font-size:0.88em"><strong>Imitation learning.</strong> PyTorch policy trained on A&apos;s behaviour. No rules &mdash; learned to act like A.</td>
+      <td style="padding:0.7em 0.6em;text-align:center">9/12</td>
+      <td style="padding:0.7em 0.6em;text-align:center">3</td>
+      <td style="padding:0.7em 0.6em;text-align:center">14.6</td>
+      <td style="padding:0.7em 0.8em;text-align:center">
+        <a href="/ghost_town/demo/demo_condition_b/0/1/" style="background:#FF9800;color:white;text-decoration:none;padding:0.35em 0.9em;border-radius:6px;font-size:0.88em;white-space:nowrap">&#9654; Watch</a>
+      </td>
+    </tr>
+    <tr>
+      <td style="padding:0.7em 1em;font-weight:bold;color:#4CAF50">&#128994; Condition C</td>
+      <td style="padding:0.7em 0.6em;color:#555;font-size:0.88em"><strong>Dynamics model.</strong> Learns how emotional states transition. Predicts next state, not next action.</td>
+      <td style="padding:0.7em 0.6em;text-align:center">9/12</td>
+      <td style="padding:0.7em 0.6em;text-align:center">3</td>
+      <td style="padding:0.7em 0.6em;text-align:center">23.6</td>
+      <td style="padding:0.7em 0.8em;text-align:center">
+        <a href="/ghost_town/demo/demo_condition_c/0/1/" style="background:#4CAF50;color:white;text-decoration:none;padding:0.35em 0.9em;border-radius:6px;font-size:0.88em;white-space:nowrap">&#9654; Watch</a>
+      </td>
+    </tr>
+    <tr style="background:#fff0f4;border:2px solid #E91E63">
+      <td style="padding:0.7em 1em;font-weight:bold;color:#E91E63">&#128308; Condition D &#10024;</td>
+      <td style="padding:0.7em 0.6em;color:#333;font-size:0.88em"><strong>Zero emotion rules.</strong> Trained only to predict future events. Independently rediscovers fear, grief &amp; suspicion.</td>
+      <td style="padding:0.7em 0.6em;text-align:center;font-weight:bold">8/12</td>
+      <td style="padding:0.7em 0.6em;text-align:center;font-weight:bold">4</td>
+      <td style="padding:0.7em 0.6em;text-align:center;font-weight:bold">29.7</td>
+      <td style="padding:0.7em 0.8em;text-align:center">
+        <a href="/ghost_town/demo/demo_condition_d/0/1/" style="background:#E91E63;color:white;text-decoration:none;padding:0.35em 0.9em;border-radius:6px;font-size:0.88em;white-space:nowrap">&#9654; Watch</a>
+      </td>
+    </tr>
+  </table>
+  </div>
+  <p style="color:#888;font-size:0.82em;margin-top:0.4em">
+    Tip: open two tabs and scrub both to the same step to compare agent behaviour side by side.
+  </p>
+
+  <hr style="margin:1.5em 0">
+
+  <!-- WHAT TO LOOK FOR -->
+  <h2 style="font-size:1.3em;margin-bottom:0.8em">What to look for</h2>
+  <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:1em;margin-bottom:2em">
+
+    <div style="background:#fff8e1;border-radius:10px;padding:1em">
+      <div style="font-size:1.3em;margin-bottom:0.4em">🌑 Step 10 — Sunset</div>
+      <div style="font-size:0.85em;color:#555">Ghosts enter from the forest. Do agents run immediately? Baseline wanders. A,B,D flee. Compare how fast each brain reacts.</div>
+    </div>
+
+    <div style="background:#fce4ec;border-radius:10px;padding:1em">
+      <div style="font-size:1.3em;margin-bottom:0.4em">💀 Steps 15–20 — Deaths</div>
+      <div style="font-size:0.85em;color:#555">Some agents get caught. Do nearby survivors grieve? Do sheltered agents hear the news at dawn and change behaviour?</div>
+    </div>
+
+    <div style="background:#e8f5e9;border-radius:10px;padding:1em">
+      <div style="font-size:1.3em;margin-bottom:0.4em">🌅 Step 21 — Dawn</div>
+      <div style="font-size:0.85em;color:#555">Survivors wake. Do they warn each other? Do they mourn? Baseline: straight back to work. Condition D: watch the HUD bars.</div>
+    </div>
+
+    <div style="background:#e3f2fd;border-radius:10px;padding:1em">
+      <div style="font-size:1.3em;margin-bottom:0.4em">🌆 Step 34 — Night 2</div>
+      <div style="font-size:0.85em;color:#555">Survivors who remembered last night shelter <em>earlier</em> than step 10. Baseline doesn't. Does Condition D learn this too?</div>
+    </div>
+
+  </div>
+
+  <hr style="margin:1.5em 0">
+
+  <!-- SCENARIO VARIANTS -->
+  <h2 style="font-size:1.3em;margin-bottom:0.5em">Scenario variants &mdash; Condition A</h2>
+  <p style="color:#555;font-size:0.9em;margin-bottom:1em">Same brain, different pressures.</p>
+
+  <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:1em;margin-bottom:2em">
+
+    <a href="/ghost_town/demo/demo_high_ghost/0/1/" style="text-decoration:none;color:inherit">
+    <div style="border:2px solid #b71c1c;border-radius:10px;padding:1.1em;background:#fafafa;cursor:pointer">
+      <div style="font-size:1.3em;margin-bottom:0.3em">👻 High Ghost Pressure</div>
+      <div style="font-size:0.84em;color:#555">Ghost spawns doubled. Maximum fear, fastest decisions.</div>
+    </div></a>
+
+    <a href="/ghost_town/demo/demo_storm/0/1/" style="text-decoration:none;color:inherit">
+    <div style="border:2px solid #37474f;border-radius:10px;padding:1.1em;background:#fafafa;cursor:pointer">
+      <div style="font-size:1.3em;margin-bottom:0.3em">⛈️ Storm Scarcity</div>
+      <div style="font-size:0.84em;color:#555">Storms + reduced supplies. Watch sharing vs refusal dynamics shift under scarcity.</div>
+    </div></a>
+
+    <a href="/ghost_town/demo/demo_betrayal/0/1/" style="text-decoration:none;color:inherit">
+    <div style="border:2px solid #6a1b9a;border-radius:10px;padding:1.1em;background:#fafafa;cursor:pointer">
+      <div style="font-size:1.3em;margin-bottom:0.3em">⚔️ Betrayal &amp; Refusal</div>
+      <div style="font-size:0.84em;color:#555">Pre-seeded rivalries and betrayal history. Earned distrust and suspicion decay in real time.</div>
+    </div></a>
+
+  </div>
+
+  <hr style="margin:1.5em 0">
+
+  <!-- PROOF SUMMARY -->
+  <h2 style="font-size:1.3em;margin-bottom:0.5em">📊 Behavioral Proof</h2>
+  <div style="background:#f5f5f5;border-radius:10px;padding:1.2em;font-size:0.9em">
+    <p style="margin:0 0 0.6em"><strong>205,940 records &mdash; 6 scenarios &mdash; 5 conditions &mdash; 8 seeds each</strong></p>
+    <table style="border-collapse:collapse;width:100%">
+      <tr style="background:#e0e0e0">
+        <th style="text-align:left;padding:0.4em 0.6em">Signature</th>
+        <th style="text-align:center;padding:0.4em">Baseline</th>
+        <th style="text-align:center;padding:0.4em">Cond A</th>
+        <th style="text-align:center;padding:0.4em">Cond D</th>
+        <th style="text-align:center;padding:0.4em">p-value (D)</th>
+      </tr>
+      <tr>
+        <td style="padding:0.4em 0.6em">Fear &rarr; Shelter (ghost visible)</td>
+        <td style="text-align:center">52.7%</td>
+        <td style="text-align:center">97.9%</td>
+        <td style="text-align:center"><strong>99.0%</strong></td>
+        <td style="text-align:center;color:#b71c1c">3.3e&minus;113</td>
+      </tr>
+      <tr style="background:#f9f9f9">
+        <td style="padding:0.4em 0.6em">Suspicion Decay (recent &rarr; forgotten)</td>
+        <td style="text-align:center">65% &rarr; 20%</td>
+        <td style="text-align:center">67% &rarr; 32%</td>
+        <td style="text-align:center"><strong>65% &rarr; 35%</strong></td>
+        <td style="text-align:center;color:#b71c1c">8.7e&minus;142</td>
+      </tr>
+    </table>
+    <p style="margin:0.8em 0 0;color:#555;font-size:0.88em">
+      Condition D was trained with <strong>zero emotion rules</strong> &mdash; only future event prediction. It independently rediscovers OCC cognitive appraisal signatures.
+    </p>
+  </div>
+
+</div>
+{% endblock content %}

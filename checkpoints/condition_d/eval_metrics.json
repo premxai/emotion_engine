@@ -1,0 +1,86 @@
+{
+  "val": {
+    "ghost_nearby_t3": {
+      "auc": 0.9783
+    },
+    "my_death_t5": {
+      "auc": 0.9931
+    },
+    "health_drop_t3": {
+      "auc": 0.9988
+    },
+    "nearby_death_t5": {
+      "auc": 0.8124
+    },
+    "help_success_t5": {
+      "auc": 0.6349,
+      "n": 921
+    },
+    "refusal_received_t5": {
+      "auc": 0.9498
+    },
+    "tie_increase_t5": {
+      "auc": 0.0379
+    },
+    "shelter_achieved_t2": {
+      "auc": 0.9435
+    },
+    "storm_onset_t3": {
+      "auc": 0.9703
+    },
+    "scarcity_t5": {
+      "auc": 0.959
+    },
+    "graph_tension_increase_t3": {
+      "auc": 0.8797
+    },
+    "valence_t5": {
+      "mse": 0.0573
+    },
+    "action_accuracy": 0.8996,
+    "mean_prediction_auc": 0.8325
+  },
+  "test": {
+    "ghost_nearby_t3": {
+      "auc": 0.9762
+    },
+    "my_death_t5": {
+      "auc": 0.9599
+    },
+    "health_drop_t3": {
+      "auc": 0.9997
+    },
+    "nearby_death_t5": {
+      "auc": 0.9611
+    },
+    "help_success_t5": {
+      "auc": null,
+      "n": 898
+    },
+    "refusal_received_t5": {
+      "auc": 0.9381
+    },
+    "tie_increase_t5": {
+      "auc": null
+    },
+    "shelter_achieved_t2": {
+      "auc": 0.9357
+    },
+    "storm_onset_t3": {
+      "auc": 0.9623
+    },
+    "scarcity_t5": {
+      "auc": 0.9652
+    },
+    "graph_tension_increase_t3": {
+      "auc": 0.9039
+    },
+    "valence_t5": {
+      "mse": 0.044
+    },
+    "action_accuracy": 0.9273,
+    "mean_prediction_auc": 0.9558
+  },
+  "device": "cuda",
+  "best_score": 0.82246
+}

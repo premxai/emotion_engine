@@ -1,0 +1,15 @@
+# Copy this file to local.py and fill in your values.
+# local.py is gitignored — never commit it.
+
+from .base import *
+
+SECRET_KEY = 'replace-with-a-long-random-string'
+DEBUG = True
+ALLOWED_HOSTS = ['localhost', '127.0.0.1']
+
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
+    }
+}
